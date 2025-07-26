@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeOne Fitness Studio | Premium Fitness Experience</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .glass {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-black via-gray-900 to-black text-white overflow-x-hidden">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full flex justify-between items-center px-8 py-4 z-50 glass">
+    <div class="text-2xl font-extrabold text-red-500">⚡WE1 FITNESS STUDIO</div>
+    <nav class="hidden md:flex gap-8 text-sm font-semibold">
+      <a href="#features" class="hover:text-red-500 transition">Features</a>
+      <a href="#services" class="hover:text-red-500 transition">Services</a>
+      <a href="#trainers" class="hover:text-red-500 transition">Trainers</a>
+      <a href="#plans" class="hover:text-red-500 transition">Plans</a>
+      <a href="#contact" class="hover:text-red-500 transition">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row items-center justify-between px-10 pt-32 pb-16 gap-10 min-h-screen relative">
+    <!-- Text -->
+    <div class="max-w-xl z-10" data-aos="fade-right">
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+        Transform Your <span class="text-red-500">Body</span> & Life
+      </h1>
+      <p class="text-gray-300 mb-6">
+        Join WeOne Fitness Studio and experience premium training, cutting-edge equipment, and expert coaches to achieve your dream physique.
+      </p>
+      <div class="flex gap-4">
+        <button class="bg-red-500 px-6 py-3 rounded-full font-semibold text-white hover:bg-red-600 transition transform hover:scale-105">Join Now →</button>
+        <button class="border border-red-500 px-6 py-3 rounded-full font-semibold text-red-500 hover:bg-red-500 hover:text-white transition transform hover:scale-105">Explore</button>
+      </div>
+    </div>
+    <!-- Image -->
+    <div class="relative" data-aos="fade-left">
+      <img src="result_0.webp" alt="Gym Hero" class="rounded-3xl shadow-2xl w-[400px] md:w-[500px] transform hover:scale-105 transition" />
+      <div class="absolute -bottom-6 -left-6 bg-red-500 px-4 py-2 rounded-xl text-sm font-semibold">#PushYourLimits</div>
+    </div>
+  </section>
+<!-- Gym Images Gallery Section -->
+<section id="gallery" class="px-10 py-20 bg-black text-white">
+  <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Facility</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <!-- Image 1 -->
+    <div class="overflow-hidden rounded-2xl" data-aos="zoom-in">
+      <img src="2.jpg" alt="Gym Area" class="w-full h-64 object-cover transform hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- Image 2 -->
+    <div class="overflow-hidden rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+      <img src="3.jpg" alt="Equipment" class="w-full h-64 object-cover transform hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- Image 3 -->
+    <div class="overflow-hidden rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+      <img src="4.jpg" alt="Workout Zone" class="w-full h-64 object-cover transform hover:scale-110 transition duration-500" />
+    </div>
+
+    <!-- Image 4 -->
+    <div class="overflow-hidden rounded-2xl" data-aos="zoom-in" data-aos-delay="300">
+      <img src="cardio.jpg" alt="Cardio Section" class="w-full h-64 object-cover transform hover:scale-110 transition duration-500" />
+    </div>
+
+
+  </div>
+</section>
+
+  <!-- Features Section -->
+  <section id="features" class="px-10 py-20">
+    <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Why Choose Us</h2>
+    <div class="grid md:grid-cols-3 gap-10 text-center">
+      <div data-aos="fade-up" data-aos-delay="100">
+        <div class="glass p-6 rounded-2xl">
+          <h3 class="text-xl font-semibold mb-2">Certified Trainers</h3>
+          <p class="text-gray-400">Train with the best in the industry.</p>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <div class="glass p-6 rounded-2xl">
+          <h3 class="text-xl font-semibold mb-2">Modern Equipment</h3>
+          <p class="text-gray-400">Top-notch machines & free weights.</p>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300">
+        <div class="glass p-6 rounded-2xl">
+          <h3 class="text-xl font-semibold mb-2">Custom Plans</h3>
+          <p class="text-gray-400">Tailored programs for your goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="px-10 py-20 bg-gray-900">
+    <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-10 text-center">
+      <div data-aos="zoom-in" class="glass p-6 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-2">Personal Training</h3>
+        <p class="text-gray-400">One-on-one focused sessions.</p>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="100" class="glass p-6 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-2">Group Classes</h3>
+        <p class="text-gray-400">Zumba, CrossFit, Aerobics, and more.</p>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="200" class="glass p-6 rounded-2xl">
+        <h3 class="text-xl font-semibold mb-2">Functional Workouts</h3>
+        <p class="text-gray-400">Improve overall mobility & strength.</p>
+      </div>
+    </div>
+  </section>
+<!-- Plans Section -->
+<section id="plans" class="px-10 py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white">
+  <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Membership Plans</h2>
+  <div class="grid md:grid-cols-3 gap-10">
+
+    <!-- Personal Training Plan -->
+    <div class="glass p-8 rounded-2xl text-center hover:scale-105 transition transform hover:shadow-2xl" data-aos="flip-left">
+      <h3 class="text-2xl font-bold mb-4 text-red-500">Personal Training</h3>
+      <p class="text-gray-300 mb-4">One-on-one sessions with elite trainers.</p>
+      <div class="space-y-2 mb-6">
+        <p class="text-xl">₹6,000 <span class="text-sm">/month</span></p>
+        <p class="text-xl">₹16,000 <span class="text-sm">/3 months</span></p>
+        <p class="text-xl">₹30,000 <span class="text-sm">/6 months</span></p>
+        <p class="text-xl">₹60,000 <span class="text-sm">/year</span></p>
+      </div>
+      <button class="bg-red-500 px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition">Get Started</button>
+    </div>
+
+    <!-- Group Classes Plan -->
+    <div class="glass p-8 rounded-2xl text-center hover:scale-105 transition transform hover:shadow-2xl" data-aos="flip-left" data-aos-delay="100">
+      <h3 class="text-2xl font-bold mb-4 text-red-500">Group Classes</h3>
+      <p class="text-gray-300 mb-4">Dynamic group workouts to stay motivated.</p>
+      <div class="space-y-2 mb-6">
+        <p class="text-xl">Zumba - ₹2,200 <span class="text-sm">/month</span></p>
+        <p class="text-xl">Aerobics - ₹2,000 <span class="text-sm">/month</span></p>
+        <p class="text-xl">CrossFit - ₹1,500 <span class="text-sm">/month</span></p>
+      </div>
+      <button class="bg-red-500 px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition">Join Class</button>
+    </div>
+
+    <!-- Elite Plan -->
+    <div class="glass p-8 rounded-2xl text-center hover:scale-105 transition transform hover:shadow-2xl" data-aos="flip-left" data-aos-delay="200">
+      <h3 class="text-2xl font-bold mb-4 text-red-500">Elite</h3>
+      <p class="text-gray-300 mb-4">Ultimate access with premium benefits.</p>
+      <div class="space-y-2 mb-6">
+        <p>✔ Personal Coach</p>
+        <p>✔ Unlimited Access</p>
+        <p>✔ Supplements Guide</p>
+        <p class="text-xl mt-4">₹2,999 <span class="text-sm">/month</span></p>
+      </div>
+      <button class="bg-red-500 px-6 py-2 rounded-full font-semibold hover:bg-red-600 transition">Enroll Now</button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Trainers<!-- Our Experts Section -->
+<section class="bg-gray-950 text-white py-16 px-6">
+  <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">Meet Our Experts</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    
+    <!-- Expert 1 -->
+    <div class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden group transition duration-500 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+      <img src="traainer 1.jpg" alt="Expert 1" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-1">Amit Sharma</h3>
+        <p class="text-sm text-gray-400 mb-2">Head Strength Coach</p>
+        <p class="text-sm text-gray-300">Certified with ACE & NASM. 10+ years transforming lives through functional training & strength building.</p>
+      </div>
+    </div>
+
+    <!-- Expert 2 -->
+    <div class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden group transition duration-500 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+      <img src="trainer2.jpg" alt="Expert 2" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-1">Neha Patil</h3>
+        <p class="text-sm text-gray-400 mb-2">Weight Loss Expert</p>
+        <p class="text-sm text-gray-300">Specializes in female transformation & post-pregnancy recovery. 8+ years of experience in body recomposition.</p>
+      </div>
+    </div>
+
+    <!-- Expert 3 -->
+    <div class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden group transition duration-500 hover:shadow-2xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+      <img src="trainer4.webp" alt="Expert 3" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-1">Rahul Verma</h3>
+        <p class="text-sm text-gray-400 mb-2">Bodybuilding Coach</p>
+        <p class="text-sm text-gray-300">Men’s physique pro. 12+ years of advanced hypertrophy coaching. Expert in prep & natural muscle building.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+ 
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="px-10 py-20 bg-gray-900 text-white">
+  <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">What Our Members Say</h2>
+  
+  <div class="grid md:grid-cols-2 gap-10">
+
+    <!-- Testimonial 1 -->
+    <div class="glass p-8 rounded-2xl shadow-xl hover:scale-105 transition transform" data-aos="zoom-in">
+      <p class="mb-4 text-gray-300">"Joining WeOne has been life-changing. The trainers push you beyond your limits with proper guidance. Highly recommend the personal training plan!"</p>
+      <div class="mt-4">
+        <h3 class="text-lg font-semibold">Meena R.</h3>
+        <p class="text-sm text-gray-400">Software Engineer</p>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="glass p-8 rounded-2xl shadow-xl hover:scale-105 transition transform" data-aos="zoom-in" data-aos-delay="100">
+      <p class="mb-4 text-gray-300">"Amazing vibe and world-class equipment. The elite plan gives me everything I need, and my coach Daniel is just phenomenal."</p>
+      <div class="mt-4">
+        <h3 class="text-lg font-semibold">Rajesh K.</h3>
+        <p class="text-sm text-gray-400">Entrepreneur</p>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="glass p-8 rounded-2xl shadow-xl hover:scale-105 transition transform" data-aos="zoom-in" data-aos-delay="200">
+      <p class="mb-4 text-gray-300">"Zumba classes here are so fun and energetic. I look forward to every session and have made many fitness friends too!"</p>
+      <div class="mt-4">
+        <h3 class="text-lg font-semibold">Priya S.</h3>
+        <p class="text-sm text-gray-400">Student</p>
+      </div>
+    </div>
+
+    <!-- Testimonial 4 -->
+    <div class="glass p-8 rounded-2xl shadow-xl hover:scale-105 transition transform" data-aos="zoom-in" data-aos-delay="300">
+      <p class="mb-4 text-gray-300">"The trainers design custom plans that actually work. I've lost 8kgs and gained muscle strength in just 3 months."</p>
+      <div class="mt-4">
+        <h3 class="text-lg font-semibold">Akash P.</h3>
+        <p class="text-sm text-gray-400">Marketing Manager</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="px-10 py-20 bg-gray-900 text-center">
+    <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Visit Us</h2>
+    <p class="text-gray-400 mb-2">📍 WeOne Fitness, virar West, Mumbai</p>
+    <p class="text-gray-400 mb-2">📞 +91 7028159983</p>
+    <p class="text-gray-400">✉ contact@weonefitness.in</p>
+  </section>
+  <!-- Social Media Section -->
+<section class="bg-black text-white py-10 px-6">
+  <h2 class="text-2xl md:text-3xl font-bold text-center mb-6" data-aos="fade-up">Connect With Us</h2>
+
+  <div class="flex justify-center gap-8 items-center" data-aos="fade-up" data-aos-delay="100">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/yourpage" target="_blank" class="text-blue-500 hover:scale-110 transition transform duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-current" viewBox="0 0 24 24">
+        <path d="M22 12.1C22 6.48 17.52 2 11.9 2 6.48 2 2 6.48 2 12.1c0 4.98 3.66 9.1 8.44 9.88v-6.99H8.16v-2.89h2.28V9.41c0-2.26 1.33-3.51 3.37-3.51.98 0 2 .17 2 .17v2.2h-1.13c-1.11 0-1.46.7-1.46 1.42v1.7h2.49l-.4 2.89h-2.09V22C18.34 21.2 22 17.08 22 12.1z"/>
+      </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href=" https://www.instagram.com/we1_fitness_studio?igsh=bngxd2xraWQ0Zmhr " target="_blank" class="text-pink-500 hover:scale-110 transition transform duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-current" viewBox="0 0 24 24">
+        <path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.056 1.96.24 2.415.403a4.89 4.89 0 011.71 1.112 4.89 4.89 0 011.11 1.712c.164.455.348 1.244.403 2.414.058 1.267.07 1.65.07 4.85s-.012 3.583-.07 4.85c-.056 1.17-.24 1.96-.403 2.415a4.89 4.89 0 01-1.112 1.71 4.89 4.89 0 01-1.712 1.11c-.455.164-1.244.348-2.414.403-1.267.058-1.65.07-4.85.07s-3.583-.012-4.85-.07c-1.17-.056-1.96-.24-2.415-.403a4.89 4.89 0 01-1.71-1.112 4.89 4.89 0 01-1.11-1.712c-.164-.455-.348-1.244-.403-2.414C2.212 15.584 2.2 15.2 2.2 12s.012-3.583.07-4.85c.056-1.17.24-1.96.403-2.415A4.89 4.89 0 013.785 3.025a4.89 4.89 0 011.712-1.11c.455-.164 1.244-.348 2.414-.403C8.417 2.212 8.8 2.2 12 2.2zm0 1.8c-3.138 0-3.507.012-4.743.068-1.02.048-1.572.217-1.94.362-.49.19-.84.418-1.207.784a3.095 3.095 0 00-.783 1.206c-.146.368-.314.92-.363 1.94-.056 1.236-.068 1.605-.068 4.743s.012 3.507.068 4.743c.048 1.02.217 1.572.362 1.94.19.49.418.84.784 1.207.367.367.717.595 1.206.783.368.146.92.314 1.94.363 1.236.056 1.605.068 4.743.068s3.507-.012 4.743-.068c1.02-.048 1.572-.217 1.94-.362a3.095 3.095 0 001.207-.784c.367-.367.595-.717.783-1.206.146-.368.314-.92.363-1.94.056-1.236.068-1.605.068-4.743s-.012-3.507-.068-4.743c-.048-1.02-.217-1.572-.362-1.94a3.095 3.095 0 00-.784-1.207 3.095 3.095 0 00-1.206-.783c-.368-.146-.92-.314-1.94-.363-1.236-.056-1.605-.068-4.743-.068zm0 3.4a6.4 6.4 0 110 12.8 6.4 6.4 0 010-12.8zm0 2.2a4.2 4.2 0 100 8.4 4.2 4.2 0 000-8.4zm5.8-1.6a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/>
+      </svg>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/7028159983" target="_blank" class="text-green-400 hover:scale-110 transition transform duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-current" viewBox="0 0 24 24">
+        <path d="M20.52 3.48A11.86 11.86 0 0012 0C5.37 0 0 5.37 0 12a11.92 11.92 0 001.64 6L0 24l6.17-1.62A11.91 11.91 0 0012 24c6.63 0 12-5.37 12-12a11.86 11.86 0 00-3.48-8.52zM12 22a9.87 9.87 0 01-5.03-1.36l-.36-.2-3.66.96.98-3.56-.23-.37A9.88 9.88 0 1122 12c0 5.52-4.48 10-10 10zm5.5-7.5l-2.06-.6c-.27-.08-.56-.01-.75.2l-.6.72a8.38 8.38 0 01-3.7-3.7l.73-.6c.2-.2.28-.48.2-.75l-.6-2.06c-.12-.4-.52-.67-.94-.6-1.18.23-2.03 1.1-2.03 2.13 0 1.44 1.4 3.13 2.57 4.3s2.87 2.57 4.3 2.57c1.03 0 1.9-.85 2.13-2.03.08-.42-.2-.82-.6-.94z"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-black text-center text-gray-500 py-6 text-sm">
+    © <span id="year"></span> WeOne Fitness Studio. All rights reserved.
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    // Dynamic Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
